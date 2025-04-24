@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualization Assignment10</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 40px;
+        color: #004080;
+      }
+
+      .chart-section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      .chart-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #004080;
+      }
+
+      .chart-section p {
+        font-size: 15px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      .chart-section a {
+        font-size: 15px;
+        color: #0077cc;
+        text-decoration: none;
+      }
+
+      .chart-section a:hover {
+        text-decoration: underline;
+      }
+
+      .grade-label {
+        display: inline-block;
+        font-weight: bold;
+        color: green;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Visualization Assignment A9</h1>
+
+    <!-- 1. Black Hat Visualization -->
+    <div class="chart-section">
+      <h2>1. Black Hat Visualization (Misleading Histogram)</h2>
+      <p>
+        This “Black Hat” histogram intentionally distorts the data by cutting off
+        the y-axis at 1000 counts and stretching the x-axis to 10 000 s,
+        making normal delays look dramatic. 75% of values are squeezed into a
+        narrow sliver, exaggerating the tail of the distribution.
+      </p>
+      <a href="https://vizhub.com/Xhy51/3a382ca55efa48bb8490ac3a087311c4" target="_blank">
+        View Misleading Histogram on VizHub
+      </a>
+    </div>
+
+    <!-- 2. White Hat Visualization -->
+    <div class="chart-section">
+      <h2>2. White Hat Visualization (Accurate Box Plot)</h2>
+      <p>
+        This “White Hat” box plot corrects the distortion by using a proper
+        0–max axis, true quartiles, and standardized whiskers/outliers.
+        It uses neutral styling and clear annotations to explain each component
+        without sensationalism.
+      </p>
+      <a href="https://vizhub.com/Xhy51/4be9e06367c641648ac89308efa710eb" target="_blank">
+        View Accurate Box Plot on VizHub
+      </a>
+    </div>
+
+    <!-- 3. Previously Misleading Visualization -->
+    <div class="chart-section">
+      <h2>3. A3 Visual:box Plot (Original)</h2>
+      <p>
+      </p>
+      <a href="https://vizhub.com/Xhy51/f85813f16bb84ae499566c769f6dc32b" target="_blank">
+        
+      </a>
+    </div>
+
+    <!-- 4. Redesigned Previous Visualization -->
+    <div class="chart-section">
+      <h2>4. Redesigned US Choropleth Map (Clear Scale)</h2>
+      <p>
+        The redesigned map uses equal-interval bins, ensures the legend
+        clearly shows breaks, and adds state outlines and tooltips so that
+        viewers can accurately compare values without overemphasis.
+      </p>
+      <a href="https://vizhub.com/Xhy51/dbf5a99df58a4cca84ce77a2d50694ed" target="_blank">
+        View Redesigned US Choropleth on VizHub
+      </a>
+    </div>
+  </body>
+</html>
